@@ -1,0 +1,35 @@
+q1 print("hello")
+
+hello
+
+q2 "Acad"+"view"
+'Acadview'
+
+q3 x=input()
+   y=input()
+   z=input()
+   print(x,y,z)
+2
+54
+1
+2 54 1
+
+
+q4 print("Let’s get started")
+Let’s get started
+
+
+q5 a='Acadview'
+   b='python'
+   c=5000
+   print("s=%s \ncourse=%s \nfees=%d"%(a,b,c))
+s=Acadview 
+course=python 
+fees=5000
+
+
+q6 name='Tony Stark'
+   salary=1000000
+   print(("%s\n%d")%(name,salary))
+Tony Stark
+1000000
