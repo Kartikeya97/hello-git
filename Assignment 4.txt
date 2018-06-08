@@ -1,0 +1,46 @@
+TUPLES
+
+q1 tuple=('5','hi','5.0','[5,9,6]')       
+   print(len(tuple))    
+4
+  
+q2 max(tuple)
+  
+'hi'  
+   min(tuple)
+       
+'5'
+
+q3 x=(5,23,9)
+   m=0
+   for x in s:
+            m=s[0]*x 
+   print(m)
+45
+
+SETS
+
+q1 g={3,4,5,6}
+   h={1,2,3,4}
+   print(g.union(h))
+       
+{1, 2, 3, 4, 5, 6}
+   	 
+1. print(g.difference(h))  
+{5, 6}
+   
+2. print(set(g)^set(h))
+{1, 2, 5, 6}
+  
+3. print(g.intersection(h))
+{3, 4}
+    
+DICTIONARY
+    
+q1 s={'Kartikeya':89,'Harshit':64,'prerak':78,'Rakesh':92}
+          
+    
+q2 sort= sorted(s.items(), key=lambda x: x[1])
+   print (sorted)
+[('Harshit':64), ('prerak', 78), ('Kartikeya':89), ('Rakesh':92)]
+   	
