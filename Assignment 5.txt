@@ -1,0 +1,82 @@
+q1 year=int(input("enter a year "))
+   if(year%4==0) and (year%100!=0 or year%400==0):
+   	print("leap year ")
+   else:
+   	print("not a leap year")
+
+enter a year 2024
+leap year 
+
+
+q2 l=int(input("enter length "))
+   b=int(input("enter breadth "))
+   if(l==b):
+   	print("square")
+   else:
+   	print("rectangle")
+
+enter length 2
+enter breadth 4
+rectangle
+
+
+q3 a1=int(input("enter age "))
+   a2=int(input("enter age "))
+   a3=int(input("enter age "))
+   if(a1>a2) and (a1>a3):
+   	print("a1 is oldest")
+   elif(a1<a2) and (a1<a3):
+   	print("a1 is youngest")
+   if(a2>a1) and (a2>a3): 
+   	print("a2 is oldest")
+   elif(a2<a1) and (a2<a3):
+   	print("a2 is youngest")
+   if(a3>a1) and (a3>a2):
+   	print("a3 is oldest")
+   elif(a3<a1) and (a3<a2):
+   	print("a3 is youngest")
+
+enter age 1
+enter age 0
+enter age 2
+a2 is youngest
+a3 is oldest
+
+
+q4 your_input=int(input("enter points < 200 "))
+   if(your_input>=0 and your_input<=50):
+   	print("no prize")
+   elif(your_input>=51 and your_input<=150):
+   	print("Congratulations! You won a wooden dog")
+   elif(your_input>=151 and your_input<=180):
+   	print("Congratulations! You won a book")
+   elif(your_input>=181 and your_input<=200):
+   	print("Congratulations! You won a Chocolates")
+   else:
+   	print("invalid input")
+
+enter points 100
+Congratulations! You won a wooden dog
+
+
+q5 q=int(input("enter quantity "))
+   cost=q*100
+   if(cost>1000):
+   	cost_new=cost-(cost*(1/10))
+   	print(cost_new)
+   else:
+   	print(cost)
+
+
+enter quantity 100
+9000.0
+
+
+
+
+
+
+
+
+
+
