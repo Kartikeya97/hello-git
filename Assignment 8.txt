@@ -1,0 +1,45 @@
+q1 The timetuple() method of datetime.date instances returns an object of 
+   type time.struct_time. The struct_time is a named tuple object .A named tuple object 
+   has attributes that can be accessed by an index or by name
+
+
+q2 import time
+   print(time.asctime())
+
+Tue Jun 19 03:10:19 2018
+
+q3  import datetime
+    d=datetime.date.today()
+    d.month
+
+6
+
+q4 import datetime
+   d=datetime.date.today()
+   d.day 
+   
+19 
+   
+q5 from datetime import time
+   print(today.strftime('%m/%d/%Y'))
+
+06/19/2018
+
+q6 import time
+   print(time.asctime(time.localtime()))
+
+Tue Jun 19 03:19:40 2018
+
+q7 import math as m
+   m.factorial(5)
+
+120
+
+q8 import math as m
+   m.gcd(3,6)
+
+3
+
+q9 import os
+   print(os.getcwd())
+   print(os.name)
