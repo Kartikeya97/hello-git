@@ -1,0 +1,32 @@
+q1 import re
+   match=r'(\w+)@([A-Z0-9]+)\.(com)'
+   emails = "zuck26@facebook.com page33@google.com jeff42@amazon.com"
+   a=re.findall(pattern, emails, flags=re.IGNORECASE)
+   print(a)
+
+[('zuck26', 'facebook', 'com'), ('page33', 'google', 'com'), ('jeff42', 'amazon', 'com')]
+
+q2 import re
+   text="Betty bought a bit of butter, But the butter was so bitter, So she bought some better butter, To make the bitter butter better"
+   a=re.findall(r'\bB\w+', text, flags=re.IGNORECASE)
+   print(a)
+
+['Betty', 'bought', 'bit', 'butter', 'But', 'butter', 'bitter', 'bought', 'better', 'butter',
+'bitter', 'butter', 'better']
+
+q3 import re
+   sentence="A, very   very; irregular_sentence"
+   a=(" ".join(re.split('[;,\s_]+', sentence)))
+   print(a)
+
+A very very irregular sentence
+
+q4 import re
+   tweet = '''Good advice! RT @TheNextWeb: What I would do differently if I was learning to code today http://t.co/lbwej0pxOd cc: @garybernhardt #rstats''' 
+   a=("".join(re.split('[!@://.#]+',tweet)))
+   s=re.sub('RT TheNextWeb','','Good advice RT TheNextWeb What I would do differently if I was learning to code today httptcolbwej0pxOd cc garybernhardt rstats')
+   s=re.sub('httptcolbwej0pxOd','','Good advice What I would do differently if I was learning to code today cc garybernhardt rstats')
+   s=re.sub('cc garybernhardt rstats','','Good advice What I would do differently if I was learning to code today cc garybernhardt rstats')
+   print(s)
+
+Good advice What I would do differently if I was learning to code today
