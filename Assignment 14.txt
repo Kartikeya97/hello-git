@@ -1,7 +1,7 @@
 q1 import re
    match=r'(\w+)@([A-Z0-9]+)\.(com)'
    emails = "zuck26@facebook.com page33@google.com jeff42@amazon.com"
-   a=re.findall(pattern, emails, flags=re.IGNORECASE)
+   a=re.findall(match, emails, flags=re.IGNORECASE)
    print(a)
 
 [('zuck26', 'facebook', 'com'), ('page33', 'google', 'com'), ('jeff42', 'amazon', 'com')]
