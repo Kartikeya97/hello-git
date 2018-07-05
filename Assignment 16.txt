@@ -1,0 +1,59 @@
+q1 from tkinter import *
+   root=Tk()
+   root.title('A')
+   root.configure(background='blue')
+   t=Label(root,text='hello World')
+   t.pack()
+   exitB=Button(root, text='exit', width=25,command=root.destroy)
+   exitB.pack()
+   root.mainloop()
+
+q2 from tkinter import *
+   def hello():
+   	h=Label(root, text = "Hello. thanks for clicking")
+	h.pack()
+   root=Tk()
+   root.title('A')
+   root.configure(background='blue')
+   t=Label(root,text='hello World')
+   t.pack()
+   exit=Button(root,text='exit',\
+	       command=root.destroy)
+   exit.pack()
+   HW=Button(root,text='click',\
+	             command=write_hello)
+   HW.pack()
+   root.mainloop()
+
+q3 from tkinter import *
+   root = Tk()
+   root.title('A')
+   root.configure(background='blue')
+   def UserE:
+   	userL = Label(root, text='User Name: ')
+   	userL.pack()
+   	userE = Entry(root)
+   	userE.pack()
+
+   retryB=Button(root, text='Retry', bg='green',\
+                  width=25,command=UserE)    
+   exitB=Button(root, text='exit', width=25, \
+                 command=root.destroy)
+   retryB.pack()
+   exitB.pack()
+   root.mainloop()
+
+q4 from tkinter import *
+   root = Tk()
+   root.title('A')
+   root.configure(background='blue')
+   def print_nameE:
+   	nameL = Label(root, text='User Name: ')
+   	nameL.pack()
+   	nameE = Entry(root)
+   	nameE.pack()
+
+   printB=Button(root, text='Retry', bg='green',\
+                  width=25,command=print_nameE)    
+   printB.pack()
+   root.mainloop()
