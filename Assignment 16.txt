@@ -21,7 +21,7 @@ q2 from tkinter import *
 	       command=root.destroy)
    exit.pack()
    HW=Button(root,text='click',\
-	             command=write_hello)
+	             command=hello)
    HW.pack()
    root.mainloop()
 
@@ -29,7 +29,7 @@ q3 from tkinter import *
    root = Tk()
    root.title('A')
    root.configure(background='blue')
-   def UserE:
+   def UserE():
    	userL = Label(root, text='User Name: ')
    	userL.pack()
    	userE = Entry(root)
@@ -47,7 +47,7 @@ q4 from tkinter import *
    root = Tk()
    root.title('A')
    root.configure(background='blue')
-   def print_nameE:
+   def print_nameE():
    	nameL = Label(root, text='User Name: ')
    	nameL.pack()
    	nameE = Entry(root)
