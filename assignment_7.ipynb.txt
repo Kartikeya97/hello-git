@@ -1,0 +1,29 @@
+# Question 1  
+   import numpy as nm
+   np=nm.random.rand(10,1)
+   print(np)
+   print(nm.mean(np))
+
+# Question 2  
+   import numpy as nm
+   a=nm.random.rand(20, 1)
+   print(a)
+   print("Variance of array is: ", nm.var(a))
+   print("Standard deviation of array is: ", nm.std(a))
+
+# Question 3
+   import numpy as nm
+   a=nm.random.rand(10,20)
+   b=nm.random.rand(20,25)
+   print("Matrix A is: ", a)
+   print("Matrix B is: ", b)
+   c=nm.matmul(a , b)
+   print("Matrix Multiplication of A and B is: ", c)
+   print("Sum of elements of New Matrix is: ", nm.sum(c))
+
+# Question 4
+   import numpy as nm
+   a=nm.random.rand(10, 1)
+   print(a)
+   f=1/(1+nm.exp(-a))
+   print("New array: \n",f)
