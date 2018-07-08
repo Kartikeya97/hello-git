@@ -1,0 +1,50 @@
+#Question no 1:
+
+
+
+import pandas as pd
+df = pd.DataFrame({
+'Name': ['Kartikeya','Manish'],
+'Age': [21,22],
+'Mail_id': ['kartikeya.gmail.com','manish.gmail.com'],
+'Phone_Number':[5778904570,9365789023]
+ })
+
+print(df)
+
+
+
+
+#Question no 2:
+
+
+
+import pandas as pd
+
+
+df = pd.read_csv('https://raw.githubusercontent.com/Shreyas3108/Weather/master/weather.csv')
+
+
+
+a.) print("First 5 rows: ",df.head())
+
+b.) print("First 10 rows: ",df.head(10))
+
+c.) print("Basic statistics: ",df.describe())
+
+d.) print("Last 5 rows: ",df.tail())
+
+e.) a=df.columns[2]
+    z=df[a]
+    print("Basic statistics: ",z.describe())
+
+
+
+
+
+
+
+
+
+
+
