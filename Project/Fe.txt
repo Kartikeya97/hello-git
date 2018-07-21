@@ -1,4 +1,3 @@
-Fe
 import tkinter  
 import Be  
 
